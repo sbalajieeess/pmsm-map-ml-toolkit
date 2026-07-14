@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "PMSM canonical truth map row v1",
+  "type": "object",
+  "required": [
+    "case_id",
+    "source_solver",
+    "geometry_id",
+    "temperature_C",
+    "id_RMS_A",
+    "iq_RMS_A",
+    "torque_Nm",
+    "psiD_Wb",
+    "psiQ_Wb",
+    "converged"
+  ],
+  "properties": {
+    "case_id": {
+      "type": "string"
+    },
+    "source_solver": {
+      "enum": [
+        "FEMM",
+        "ELMER2D",
+        "UNKNOWN"
+      ]
+    },
+    "geometry_id": {
+      "type": "string"
+    },
+    "temperature_C": {
+      "type": "number"
+    },
+    "id_RMS_A": {
+      "type": "number"
+    },
+    "iq_RMS_A": {
+      "type": "number"
+    },
+    "torque_Nm": {
+      "type": "number"
+    },
+    "psiD_Wb": {
+      "type": "number"
+    },
+    "psiQ_Wb": {
+      "type": "number"
+    },
+    "converged": {
+      "type": [
+        "boolean",
+        "string",
+        "integer"
+      ]
+    }
+  }
+}
