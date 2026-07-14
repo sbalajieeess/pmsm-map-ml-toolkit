@@ -38,3 +38,6 @@ pmsm-map-visualize --input examples\truth_map_example.csv --output-dir outputs\p
 
 See `docs/DATA_SCHEMA.md`, `docs/SIGN_CONVENTIONS.md`, and
 `docs/PIPELINE_BOUNDARY.md` before connecting a solver repository.
+
+For setup, smoke tests, and public cross-repository workflow tips, see
+`docs/PUBLIC_REPOSITORY_USAGE_GUIDE.md`.
